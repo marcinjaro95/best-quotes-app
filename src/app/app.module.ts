@@ -2,13 +2,27 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import {FormsModule} from "@angular/forms";
+import { NavbarComponent } from './navbar/navbar.component';
+import { RankingComponent } from './ranking/ranking.component';
+import { FormComponent } from './form/form.component';
+import { VoteButtonsComponent } from './vote-button/vote-buttons.component';
+import { ButtonComponent } from './button/button.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    RankingComponent,
+    FormComponent,
+    VoteButtonsComponent,
+    ButtonComponent,
+    ListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
